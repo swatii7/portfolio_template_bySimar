@@ -1,0 +1,43 @@
+.projectDetailWrapper{
+    margin-top: 50px;
+}
+.projectImg{
+    height: 340px;
+}
+.portfolioOverlayContainer{
+    height: 0%;
+    top: 0;
+    background-color: #070b1093;
+    border-radius: 5px;
+    transition: all 0.4s;
+    width: 95%;
+    opacity: 0;
+}
+.projectContainer:hover .portfolioOverlayContainer{
+    height: 100%;
+    opacity: 1;
+}
+.projectContent{
+    background-color: #ff6b00 !important;
+    padding: 20px;
+    bottom: -200px;
+    margin: auto;
+    width: 75%;
+    border-radius: 6px;
+    opacity: 0;
+    transition: all 0.4s;
+}
+.projectContainer:hover .projectContent{
+    bottom: 20px;
+    opacity: 1;
+}
+.projectDesc{
+    font-size: 21px;
+    line-height: 1.3em;
+}
+
+@media(max-width: 767px){
+    .projectImg{
+        height: 300px;
+    }
+}

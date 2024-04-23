@@ -1,0 +1,22 @@
+.cardWrapper{
+    padding: 50px 30px;
+    border: 1px solid #ffe2d1;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+.cardWrapper img{
+    margin-bottom: 25px;
+}
+.cardWrapper h3{
+    margin-bottom: 13px;
+    color: #101010;
+}
+.cardWrapper p{
+    color: #606060 !important;
+    line-height: 1.7em;
+}
+
+.cardWrapper:hover{
+    background-color: #fff5ef;
+    border-color: transparent;
+}

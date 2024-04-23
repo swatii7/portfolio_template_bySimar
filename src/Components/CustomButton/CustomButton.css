@@ -1,0 +1,50 @@
+.commonButton{
+    background-color: var(--orangeColor) !important;
+    border: 1px solid transparent;
+    font-size: 21px;
+    padding: 10px 32px;
+    border-radius: 6px;
+    transition: all 0.3s;
+  }
+  .commonButton::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--blackColor);
+    visibility: hidden;
+    transition: all 1s ease;
+  }
+  .commonButton::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--blackColor);
+    visibility: hidden;
+    transition: all 1s ease;
+  }
+  .commonButton:hover{
+    color: var(--orangeColor);
+    border-color: var(--blackColor);
+  }
+  .commonButton:hover::after{
+    visibility: visible;
+    transform: rotate(0deg);
+    left: 0;
+  }
+  .commonButton:hover::before{
+    visibility: visible;
+    transform: rotate(0deg);
+    right: 0;
+  } 
+  .commonButton span{
+    z-index: 1;
+  }
+  .commonButton:hover span{
+    color: var(--orangeColor);
+  }
