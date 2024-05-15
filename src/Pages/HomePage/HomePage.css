@@ -6,7 +6,6 @@
   .customContainer {
     padding-left: calc((100% - 1320px) / 2) !important;
     padding-right: calc((100% - 1320px) / 4) !important;
-    margin-left: 15px;
   }
   .index-module_type__E-SaG::after {
     content: '|';
@@ -176,7 +175,7 @@
   /* ended */
   /* about style css */
   .aboutWrapper {
-    padding: 130px 0px 65px 0px;
+    padding: 65px 0px 65px 0px;
   }
   .numberText{
     color: var(--orangeColor);
@@ -195,7 +194,7 @@
 
   /* blog section css */
   .blog_wrapper{
-    padding-top: 130px;
+    padding-top: 65px;
   }
   .card{
     border: 1px solid #ffe2d1;
@@ -245,7 +244,9 @@
   .card:hover .btnLink span{
     margin-right: 20px !important;
   }
-  
+  .cardImg {
+    height: 233px;
+}
   @media(max-width:990px) {
     .customContainer{
         padding-left: 15px !important;
@@ -342,4 +343,6 @@
   .imageWrapper{
     margin-bottom: 0px;
   }
+  h1 {font-size: 32px !important;}
+  .profileContent {font-size: 16px;}
   }

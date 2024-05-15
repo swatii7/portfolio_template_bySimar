@@ -16,16 +16,13 @@ export default function Footer() {
                         <div className='footerLinks'>
                             <ul className="list-unstyled">
                                 <li>
-                                    <a href="#about" className="text-decoration-none text-white font-jost fw-normal">About</a>
+                                    <a href="/about" className="text-decoration-none text-white font-jost fw-normal">About</a>
                                 </li>
                                 <li>
-                                    <a href='#resume' className="text-decoration-none text-white font-jost fw-normal">Resume</a>
+                                    <a href='/resume' className="text-decoration-none text-white font-jost fw-normal">Resume</a>
                                 </li>
                                 <li>
-                                    <a href='#portfolio' className="text-decoration-none text-white font-jost fw-normal">Portfolio</a>
-                                </li>
-                                <li>
-                                    <a href='#blog' className="text-decoration-none text-white font-jost fw-normal">Blog</a>
+                                    <a href='/portfolio' className="text-decoration-none text-white font-jost fw-normal">Portfolio</a>
                                 </li>
                             </ul>
                         </div>
@@ -35,16 +32,16 @@ export default function Footer() {
                         <div className='footerLinks'>
                             <ul className="list-unstyled">
                                 <li>
-                                    <a href="#services" className="text-decoration-none text-white font-jost fw-normal">UI/UX Design</a>
+                                    <a href="/services" className="text-decoration-none text-white font-jost fw-normal">UI/UX Design</a>
                                 </li>
                                 <li>
-                                    <a href='#services' className="text-decoration-none text-white font-jost fw-normal">Mobile App</a>
+                                    <a href='/services' className="text-decoration-none text-white font-jost fw-normal">Mobile App</a>
                                 </li>
                                 <li>
-                                    <a href='#services' className="text-decoration-none text-white font-jost fw-normal">UI Testing</a>
+                                    <a href='/services' className="text-decoration-none text-white font-jost fw-normal">UI Testing</a>
                                 </li>
                                 <li>
-                                    <a href='#services' className="text-decoration-none text-white font-jost fw-normal">Redux   </a>
+                                    <a href='/services' className="text-decoration-none text-white font-jost fw-normal">Redux   </a>
                                 </li>
                             </ul>
                         </div>

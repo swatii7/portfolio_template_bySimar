@@ -1,0 +1,9 @@
+.servicesWrapper{
+    padding: 65px 0px;
+}
+
+@media(max-width: 992px){
+    .servicesWrapper{
+        padding: 45px 0px;
+    }
+}

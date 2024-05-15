@@ -1,0 +1,219 @@
+.aboutWrapper .progress{
+    height: 10px;
+    background-color: rgb(255, 240, 229);
+    margin-bottom: 30px;
+}
+.progress-bar{
+    background-color: var(--orangeColor);
+}
+
+.aboutProfileImg{
+    z-index: 1;
+    width: 560px;
+    height: 642px;
+}
+.bgImgWrapper{
+    left: 10%;
+    top: 15px;
+    animation-name: contentFadeInOut;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+.countContainer{
+    padding: 65px 0px 130px;
+}
+.counterWrapper{
+    background-color: #fff3ea;
+    border-radius: 6px;
+    padding: 55px 0px 105px;
+}
+.aboutContent .skillsPercent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+}
+.counterItem{
+    padding: 0px 90px;
+}
+.counterItem{
+    border-right: 1px solid #e7dcd4;
+}
+.counterContent{
+    line-height: 1.7em;
+    color: var(--orangeColor);
+}
+.counterContent span{
+    font-size: 50px;
+}
+.counterHeading{
+    font-size: 20px;
+    color: var(--blackColor);
+    line-height: 1.2em;
+}
+.resumeSection{
+    padding: 130px 0px;
+    background-color: #fff3ea;
+}
+.resumecontent .resumeHeading{
+    color: var(--blackColor);
+    line-height: 1.3em;
+}
+.resumeDivider{
+    margin: 12px 0px 50px;
+    height: 1px;
+    border-top: var(--orangeColor) solid !important;
+    opacity: 1;
+}
+.resumeDetailContent{
+    margin-bottom: 40px;
+}
+.resumeDetailContent .detailContentHeading{
+    font-size: 18px;
+    line-height: 1.6em;
+    color: var(--blackColor);
+}
+.resumeDetailContent p{
+    color: #606060;
+    line-height: 1.7em;
+    font-size: 16px;
+}
+.resumeDetailContent p span{
+    color: var(--blackColor);
+}
+.experienceDetails{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.experienceDetails p{
+    font-size: 16px;
+    color: var(--secondaryBlackColor);
+    line-height: 1.7em;
+}
+.experienceDetails h5{
+    line-height: 1.6em;
+    font-size: 18px;
+    color: var(--blackColor);
+}
+.contactWrapper{
+    padding: 65px 0px 130px;
+}
+.contactWrapper .contactContainer{
+    background-image: url(../../assets/AboutPageImg/conactCtaBg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 85px 30%;
+    border-radius: 10px;
+    animation-name: bgMove2;
+    animation-timing-function: linear;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+.contactWrapper .contactContainer p{
+    opacity: 0.75;
+    line-height: 1.7em;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.contactWrapper .contactContainer h2{
+    font-size: 44px;
+    line-height: 1.3em;
+}
+
+@media(max-width: 1200px){
+    .aboutProfileImg{
+        width: 70%;
+        height: fit-content;
+    }
+    .bgImgWrapper{
+        left: 14%;
+        top: 87px;
+        width: 72%;
+    }
+
+}
+@media(max-width: 1024px){
+    .bgImgWrapper{
+        top: 159px;
+    }
+
+}
+
+@media(max-width: 992px){
+    .aboutWrapper{
+        padding: 45px 0px;
+    }
+    .bgImgWrapper{
+        left: 7%;
+        top: 100px;
+        width: 85%;
+    }
+    .aboutProfileImg{
+        width: 85%;
+        height: fit-content;
+    }
+    .breadcrumb{
+        margin-bottom: 0px !important;
+    }
+    .aboutImageWrapper{
+        margin-bottom: 50px;
+    }
+    .contactWrapper{
+        padding: 45px 0px 90px;
+    }
+    .contactWrapper .contactContainer{
+        padding: 60px 10%;
+    }
+    .aboutContent{
+        order: 2;
+    }
+  }
+
+  @media(max-width: 767px){
+      .aboutProfileImg{
+        width: 80%;
+        height: fit-content;
+    }
+      .bgImgWrapper{
+        left: 10%;
+        top: 32px;
+        width: 80%;
+    }
+    .aboutWrapper{
+        padding: 31px 0px 45px;
+    }
+    .experienceDetails{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .aboutContent .skillsPercent{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .counterWrapper .counterItem{
+        margin-top: 3rem;
+    }
+
+  }
+
+  @keyframes contentFadeInOut{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+  }
+  @keyframes bgMove2{
+    0%{
+        background-position: top;
+    }
+    25%{
+        background-position: right;
+    }
+    50%{
+        background-position: bottom;
+    }
+    100%{
+        background-position: left;
+    }
+  }

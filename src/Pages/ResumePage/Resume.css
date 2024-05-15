@@ -1,0 +1,144 @@
+.resumeArchieveWrapper{
+    padding: 65px 0px 0px;
+}
+#fill-tab-example-tabpane-skills .progress{
+    margin-bottom: 42px;
+}
+.skillsWithLogoWrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin-bottom: 30px;
+}
+.skillLogoWrapper{
+    width: 105px;
+    height: 105px;
+    margin-bottom: -10px;
+}
+.skillNameWrapper{
+    border-width: 0px 3px 3px 1px;
+    border-style: solid;
+    border-color: rgba(255, 107, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px 50px;
+}
+.skillNameWrapper h5{
+    font-size: 18px;
+    line-height: 1.3em;
+    color: var(--blackColor);
+}
+.skillNameWrapper h5 span{
+    color: var(--orangeColor);
+}
+.hobbiesWrapper{
+    grid-template-columns: repeat(2, 1fr);
+}
+.person_images{
+    width: 80px;
+}
+.hobbiesWrapper h4{
+    font-size: 18px;
+}
+.contentWrapper{
+    padding-left: 70px;
+}
+.tabSwitcher{
+    padding: 10px;
+    border: 1px solid var(--orangeColor);
+    border-radius: 5px;
+    gap: 20px;
+}
+.tabSwitcher .nav-item .nav-link{
+    font-size: 18px;
+    padding: 12px 10px !important;
+    text-align: center;
+    width: 100%;
+    border-radius: 5px;
+    color: var(--blackColor) !important;
+    font-weight: 600;
+    font-family: "Jost", sans-serif;
+    transition: all 0.3s;
+    min-height: 60px;
+}
+.tabSwitcher .nav-link.active,
+.tabSwitcher .nav-item .nav-link:hover{
+    border-color: transparent;
+    background-color: var(--orangeColor);
+    color: #fff !important;
+}
+.tabContent{
+    margin-top: 100px;
+}
+.tabItem{
+    border-radius: 6px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+.tabItem:last-child{
+    margin-bottom: 0px;
+}
+.imageTabContent{
+    width: 75px;
+    height: 75px;
+    border: 1px solid var(--orangeColor);
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.tabImage{
+    width: 50px;
+}
+.contentTitle{
+    font-size: 23px;
+    line-height: 1.3em;
+    margin-bottom: 10px;
+}
+.desTitle{
+    line-height: 1.6em;
+    color: var(--secondaryBlackColor);
+    font-size: 18px;
+}
+.tenureContent{
+    font-size: 24px;
+    color: var(--orangeColor);
+    padding-top: 20px;
+}
+.contactContentWrapper{
+    color: var(--blackColor);
+    padding: 0px 30%;
+}
+
+@media (max-width: 992px){
+    .contentWrapper{
+        padding-left: 0px;
+    }
+    .contactContentWrapper{
+        padding: 0px;
+    }
+}
+@media(max-width: 767px){
+    .contentWrapper{
+        padding-left: 10px;
+    }
+    .skillsWithLogoWrapper{
+        gap: 15px;
+    }
+    .skillNameWrapper{
+        padding: 10px;
+    }
+    .skillLogoWrapper img{
+        max-width: 60px;
+    }
+    .tabItem{
+        margin: 0px 5px 30px 5px;
+    }
+    .imageTabContent{
+        width: 88px;
+        height: 88px;
+    }
+    .imageTabContent img{
+        width: 60px;
+    }
+    .contactContentWrapper{
+        padding: 0px 10%;
+    }
+}

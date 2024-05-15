@@ -1,14 +1,11 @@
 import CustomHeading from "../CustomHeading/CustomHeading";
-import cardOneImg from '../../assets/PortfolioImg/portfolioOne.png'
 import './Portfolio.css'
-import { Link } from "react-bootstrap-icons";
 import { portfolioArr } from "../../Data/Data";
 
-export default function Portfolio(){
+export default function CommonPortfolio(){
     return(
         <>
         <CustomHeading subHeading='My Portfolio' heading='visit my portfolio' customClass='text-center' imageClass='text-center justify-content-center' headingClass='text-uppercase' />
-
         <div className="row projectDetailWrapper">
             {
                 portfolioArr.map((item, index)=>

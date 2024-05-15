@@ -12,19 +12,19 @@
   --secondaryBlackColor: #606060;
   --lightWhiteColor: #fff5ef;
 }
-
+.blackColor{
+  color: var(--blackColor);
+}
 .font-jost {
   font-family: "Jost", sans-serif;
 }
 .font-urbanist{
   font-family: "Urbanist", sans-serif;
 }
-
 h1 {
   font-size: 84px !important;
   line-height: 1.2em !important;
 }
-
 h2 {
   font-family: "Jost", sans-serif;
   font-size: 44px !important;
@@ -47,6 +47,13 @@ blockquote {
   letter-spacing: 0.7px;
   color: #606060;
 }
+.mt-50{
+  margin-top: 50px !important;
+}
+.navbar{
+  background-color: transparent;
+  z-index: 9999;
+}
 .nav-link {
   color: var(--blackColor) !important;
   padding: 30px 0px !important;
@@ -54,4 +61,29 @@ blockquote {
 }
 .nav-link:hover {
   color: var(--orangeColor) !important;
+}
+.breadcrumb-item a{
+  color: var(--secondaryBlackColor) !important;
+  text-decoration: none !important;
+}
+.active{
+  color: var(--orangeColor) !important;
+}
+
+@media(max-width: 990px){
+  .mt-negative{
+    margin-top: -85px;
+  }
+  h2{
+    font-size: 38px !important;
+  }
+}
+@media(max-width: 767px){
+  .mt-negative{
+    margin-top: 0px;
+  }
+  .navbar{
+    background-color: var(--lightWhiteColor);
+    height: 70px;
+  }
 }

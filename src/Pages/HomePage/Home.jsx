@@ -1,5 +1,4 @@
 import { TypeAnimation } from "react-type-animation";
-import Header from "../../Components/Header/Header";
 import './HomePage.css'
 import dotImg from '../../assets/CommonImages/orangeDot.png'
 import profileImg from '../../assets/HomePageImg/bannerImg.png'
@@ -13,25 +12,17 @@ import aboutIconTwoImg from '../../assets/HomePageImg/aboutIconTwo.png'
 import CountUp from 'react-countup';
 import { useState } from "react";
 import ScrollTrigger from "react-scroll-trigger";
-import { CheckSquare } from "react-bootstrap-icons";
+import { CheckSquare, ArrowRight} from "react-bootstrap-icons";
 import CustomHeading from "../../Components/CustomHeading/CustomHeading";
 import ServiceCard from "../../Components/ServiceCard/ServiceCard";
 import { ServiceCardArr, blogArr } from "../../Data/Data";
-import Portfolio from "../../Components/PortfolioSection/Portfolio";
+import CommonPortfolio from "../../Components/PortfolioSection/CommonPortfolioSection";
 import Card from 'react-bootstrap/Card';
 
 export default function Home() {
 
     const [counterOn, setCounterOn] = useState(false)
     const [isVisible, setIsVisible] = useState(false)
-
-    var settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-    };
 
     return (
         <>
@@ -53,8 +44,6 @@ export default function Home() {
                                     <TypeAnimation sequence={[
                                         'Simar Rajput',
                                         1000,
-                                        'Designer',
-                                        1000,
                                         'Developer',
                                         1000,
                                         'App Developer',
@@ -68,7 +57,7 @@ export default function Home() {
                                 </h1>
                                 <p className="font-jost fw-normal profileContent mt-4">Welcome to my digital domain! I am a passionate full stack developer dedicated to crafting immersive digital experiences and robust, scalable solutions. With a blend of creativity and technical prowess, I navigate seamlessly between frontend elegance and backend functionality, shaping the digital landscape one line of code at a time</p>
                                 <div className="d-inline-block btnWrapper position-relative">
-                                    <CustomButton title='Download My CV' href='#resume' />
+                                    <CustomButton title='View My CV' href='/resume' />
                                 </div>
                                 <div className="position-absolute secondBgWrapper">
                                     <img src={bgImgSecond} alt="background image" className="img-fluid" width={70} />
@@ -265,25 +254,32 @@ export default function Home() {
             {/* My Portfolio section */}
             <section className="portfolioWrapper">
                 <div className="container">
-                    <Portfolio />
+                    <CommonPortfolio />
                     <div className="blog_wrapper">
                         <CustomHeading subHeading='My Blog' heading='Latest Blog' customClass='text-center' imageClass='text-center justify-content-center' headingClass='text-uppercase' />
                         <div className="mt-5 row">
-                            {blogArr.map((blog, index)=>
-                            <div className={blog.className} key={index}>
-                            <Card className="h-100">
-                                <div className="imgOverlay position-relative">
-                                <Card.Img variant="top" src={blog.image} className="cardImg" />
+                            {blogArr.map((blog, index) =>
+                                <div className={blog.className} key={index}>
+                                    <Card className="h-100">
+                                        <div className="imgOverlay position-relative">
+                                            <Card.Img variant="top" src={blog.image} className="cardImg" />
+                                        </div>
+                                        <Card.Body className="blogCardContent">
+                                            <p className="blogDate font-urbanist fw-normal">{blog.date}</p>
+                                            <Card.Title>
+                                                <a href={blog.linkHref} className="text-decoration-none blog_heading font-jost fw-semibold fs-4 mb-4">
+                                                    {blog.blogTitle}
+                                                </a>
+                                            </Card.Title>
+                                            <a href={blog.linkHref} className='text-decoration-none font-jost fw-semibold btnLink'>
+                                                <span className='me-2'>Read More</span>
+                                                <ArrowRight />
+                                            </a>
+                                        </Card.Body>
+                                    </Card>
                                 </div>
-                                <Card.Body className="blogCardContent">
-                                    <p className="blogDate font-urbanist fw-normal">{blog.date}</p>
-                                    <Card.Title className="blog_heading font-jost fw-semibold fs-4 mb-4">{blog.blogTitle}</Card.Title> 
-                                    {blog.blogBtn}
-                                </Card.Body>
-                            </Card>
-                            </div>
                             )}
-                            
+
                         </div>
                     </div>
                 </div>
